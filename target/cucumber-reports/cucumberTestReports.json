@@ -3,60 +3,100 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-22T03:07:07.516Z",
+        "start_timestamp": "2020-01-24T01:36:15.819Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8343856585,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
         "line": 4,
-        "name": "Verify title of Home Page",
+        "name": "Verify new User created",
         "description": "",
-        "id": "home-page-testing;verify-title-of-home-page",
+        "id": "register-page-testing;verify-new-user-created",
+        "after": [
+          {
+            "result": {
+              "duration": 346212458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 8191101570,
+              "status": "passed"
             },
             "line": 5,
             "name": "User opens home page",
-            "match": {},
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1725556930,
+              "status": "passed"
             },
             "line": 6,
-            "name": "User sees My Account button",
-            "match": {},
+            "name": "User navigates to Register page",
+            "match": {
+              "location": "RegisterPage_STEPS.user_navigates_to_Register_page()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 23804529284,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Verifies title is PHPTRAVELS | Travel Technology Partner",
-            "match": {},
+            "name": "Creates new User",
+            "match": {
+              "location": "RegisterPage_STEPS.creates_new_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2537191214,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verifies title is My Account",
+            "match": {
+              "location": "RegisterPage_STEPS.verifies_title_is_My_Account()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@homePage"
-          },
-          {
-            "name": "@titleTest"
+            "name": "@registerPage"
           }
         ]
       }
     ],
-    "name": "Home page Testing",
+    "name": "Register Page Testing",
     "description": "",
-    "id": "home-page-testing",
+    "id": "register-page-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/homePage.feature",
+    "uri": "file:src/test/resources/features/registerPage.feature",
     "tags": [
       {
-        "name": "@homePage",
+        "name": "@registerPage",
         "type": "Tag",
         "location": {
           "line": 1,
