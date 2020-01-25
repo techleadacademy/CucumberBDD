@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-25T16:52:59.280Z",
+        "start_timestamp": "2020-01-25T20:40:25.819Z",
         "before": [
           {
             "result": {
-              "duration": 1449901,
-              "status": "skipped"
+              "duration": 11286099073,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.beforeScenario()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 59086,
-              "status": "skipped"
+              "duration": 66668,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.afterScenario()"
@@ -35,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 17128543,
-              "status": "skipped"
+              "duration": 6151325304,
+              "status": "passed"
             },
             "line": 5,
             "name": "User opens Admin home page",
@@ -47,8 +47,8 @@
           },
           {
             "result": {
-              "duration": 2565485,
-              "status": "skipped"
+              "duration": 3389548853,
+              "status": "passed"
             },
             "line": 6,
             "name": "User logsin with admin account",
@@ -59,29 +59,38 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 9026465637,
+              "status": "passed"
             },
             "line": 7,
             "name": "User navigate to Coupons page",
-            "match": {},
+            "match": {
+              "location": "AdminHomePage_STEPS.user_navigate_to_Coupons_page()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 12736764777,
+              "status": "passed"
             },
             "line": 8,
             "name": "Creates a new coupon",
-            "match": {},
+            "match": {
+              "location": "AdminCouponPage_STEPS.creates_a_new_coupon()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5017025545,
+              "status": "passed"
             },
             "line": 9,
             "name": "Verifies coupon is created",
-            "match": {},
+            "match": {
+              "location": "AdminCouponPage_STEPS.verifies_coupon_is_created()"
+            },
             "keyword": "Then "
           }
         ],

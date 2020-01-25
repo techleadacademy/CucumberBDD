@@ -29,7 +29,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User opens Admin home page",
@@ -39,7 +39,7 @@ formatter.match({
   "location": "AdminHomePage_STEPS.user_opens_Admin_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User logsin with admin account",
@@ -49,33 +49,39 @@ formatter.match({
   "location": "AdminHomePage_STEPS.user_logsin_with_admin_account()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User navigate to Coupons page",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminHomePage_STEPS.user_navigate_to_Coupons_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "Creates a new coupon",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminCouponPage_STEPS.creates_a_new_coupon()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "Verifies coupon is created",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminCouponPage_STEPS.verifies_coupon_is_created()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });
