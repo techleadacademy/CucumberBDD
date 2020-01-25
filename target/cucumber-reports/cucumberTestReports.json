@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-24T01:36:15.819Z",
+        "start_timestamp": "2020-01-25T16:52:59.280Z",
         "before": [
           {
             "result": {
-              "duration": 8343856585,
-              "status": "passed"
+              "duration": 1449901,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.beforeScenario()"
@@ -16,14 +16,14 @@
           }
         ],
         "line": 4,
-        "name": "Verify new User created",
+        "name": "Verify new coupon is created",
         "description": "",
-        "id": "register-page-testing;verify-new-user-created",
+        "id": "admin-coupon-page-test;verify-new-coupon-is-created",
         "after": [
           {
             "result": {
-              "duration": 346212458,
-              "status": "passed"
+              "duration": 59086,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.afterScenario()"
@@ -35,68 +35,80 @@
         "steps": [
           {
             "result": {
-              "duration": 8191101570,
-              "status": "passed"
+              "duration": 17128543,
+              "status": "skipped"
             },
             "line": 5,
-            "name": "User opens home page",
+            "name": "User opens Admin home page",
             "match": {
-              "location": "HomePage_STEPS.user_opens_home_page()"
+              "location": "AdminHomePage_STEPS.user_opens_Admin_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1725556930,
-              "status": "passed"
+              "duration": 2565485,
+              "status": "skipped"
             },
             "line": 6,
-            "name": "User navigates to Register page",
+            "name": "User logsin with admin account",
             "match": {
-              "location": "RegisterPage_STEPS.user_navigates_to_Register_page()"
+              "location": "AdminHomePage_STEPS.user_logsin_with_admin_account()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 23804529284,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "Creates new User",
-            "match": {
-              "location": "RegisterPage_STEPS.creates_new_User()"
-            },
+            "name": "User navigate to Coupons page",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2537191214,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "Verifies title is My Account",
-            "match": {
-              "location": "RegisterPage_STEPS.verifies_title_is_My_Account()"
+            "name": "Creates a new coupon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 9,
+            "name": "Verifies coupon is created",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@registerPage"
+            "name": "@adminCouponPage"
+          },
+          {
+            "name": "@addingCoupon"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
           }
         ]
       }
     ],
-    "name": "Register Page Testing",
+    "name": "Admin Coupon Page test",
     "description": "",
-    "id": "register-page-testing",
+    "id": "admin-coupon-page-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/registerPage.feature",
+    "uri": "file:src/test/resources/features/adminCouponPage.feature",
     "tags": [
       {
-        "name": "@registerPage",
+        "name": "@adminCouponPage",
         "type": "Tag",
         "location": {
           "line": 1,

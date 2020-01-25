@@ -9,12 +9,10 @@ public class Hooks{
     @Before
     public void beforeScenario(){
         Driver.getDriver();
-        System.out.println("Starting scenario");
     }
 
     @After
     public void afterScenario(){
-        System.out.println("Ending scenario");
         Driver.quitDriver();
     }
 }

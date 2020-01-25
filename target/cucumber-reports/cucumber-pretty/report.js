@@ -1,68 +1,81 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/registerPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/adminCouponPage.feature");
 formatter.feature({
-  "name": "Register Page Testing",
+  "name": "Admin Coupon Page test",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@registerPage"
+      "name": "@adminCouponPage"
     }
   ]
 });
 formatter.scenario({
-  "name": "Verify new User created",
+  "name": "Verify new coupon is created",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@registerPage"
+      "name": "@adminCouponPage"
+    },
+    {
+      "name": "@addingCoupon"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@regression"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User opens home page",
+  "name": "User opens Admin home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "HomePage_STEPS.user_opens_home_page()"
+  "location": "AdminHomePage_STEPS.user_opens_Admin_home_page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User navigates to Register page",
+  "name": "User logsin with admin account",
   "keyword": "When "
 });
 formatter.match({
-  "location": "RegisterPage_STEPS.user_navigates_to_Register_page()"
+  "location": "AdminHomePage_STEPS.user_logsin_with_admin_account()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "Creates new User",
+  "name": "User navigate to Coupons page",
   "keyword": "And "
 });
-formatter.match({
-  "location": "RegisterPage_STEPS.creates_new_User()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Verifies title is My Account",
+  "name": "Creates a new coupon",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Verifies coupon is created",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "RegisterPage_STEPS.verifies_title_is_My_Account()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

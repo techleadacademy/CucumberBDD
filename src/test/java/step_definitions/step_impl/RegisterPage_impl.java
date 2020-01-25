@@ -10,7 +10,7 @@ import util.SeleniumUtils;
 public class RegisterPage_impl {
     private static WebDriver driver = Driver.getDriver();
     RegisterPage registerPage = new RegisterPage();
-    HomePage homePage = new HomePage();
+    HomePage_impl homePage = new HomePage_impl();
 
 
     public void navigateToRegisterPage(){
@@ -19,7 +19,6 @@ public class RegisterPage_impl {
 
     public void registerNewUser(){
         NewUserInfo user = new NewUserInfo();
-        HomePage homePage = new HomePage();
         homePage.clickSignUp();
         SeleniumUtils.sendKeys(registerPage.firstName, user.getFirstName());
         SeleniumUtils.sendKeys(registerPage.lastName, user.getLastName());

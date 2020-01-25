@@ -29,17 +29,6 @@ public class HomePage {
         logo.sendKeys();
     }
 
-    public String getTitle(){
-        return driver.getTitle();
-    }
 
-    public void clickMyAccountBtn(){
-        SeleniumUtils.click(myAccount_Btn);
-    }
-
-    public void clickSignUp(){
-        clickMyAccountBtn();
-        SeleniumUtils.click(signUp_Btn);
-    }
 
 }

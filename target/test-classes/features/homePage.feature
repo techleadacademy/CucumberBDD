@@ -1,6 +1,6 @@
 @homePage
 Feature: Home page Testing
-  @titleTest
+  @verifytitle
   Scenario: Verify title of Home Page
     Given User opens home page
     When User sees My Account button
