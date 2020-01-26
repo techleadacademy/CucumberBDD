@@ -25,6 +25,9 @@ public class HomePage {
     @FindBy(xpath = "//a[text()='Login']")
     public WebElement logIn_Btn;
 
+    @FindBy(xpath = "//div[@class='container']//div[1]//figure[1]//a[1]")
+    public WebElement firstFeaturedTour;
+
     public void rand(){
         logo.sendKeys();
     }

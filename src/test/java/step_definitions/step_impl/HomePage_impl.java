@@ -23,6 +23,14 @@ public class HomePage_impl {
         SeleniumUtils.click(homePage.signUp_Btn);
     }
 
+    public void openFeaturedTour(String name){
+        switch (name.toLowerCase()){
+            case "first tour": SeleniumUtils.click(homePage.firstFeaturedTour);
+                break;
+            case "second tour":
+        }
+    }
+
 
 
 }

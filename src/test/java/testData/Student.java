@@ -23,5 +23,16 @@ public class Student {
         return studentID;
     }
 
+    public static void printID(Student student){
+        System.out.println(student.getStudentID());
+    }
+
+    public static void main(String[] args) {
+        Student student1 = new Student("M", "Champions", 555);
+
+
+        printID(student1);
+    }
+
 }
 

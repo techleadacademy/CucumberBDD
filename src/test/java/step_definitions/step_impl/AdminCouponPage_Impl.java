@@ -15,8 +15,8 @@ import java.util.List;
 public class AdminCouponPage_Impl {
     private static WebDriver driver = Driver.getDriver();
     AdminCouponPage adminCouponPage = new AdminCouponPage();
-    String testCode = "Test Code " + DateUtils.currentDateTime();
-    Coupon currentCoupon = new Coupon("25", "5", testCode, DateUtils.currentDatePlus(0), DateUtils.currentDatePlus(5));
+    static String testCode = "Test Code " + DateUtils.currentDateTime();
+    public static Coupon currentCoupon = new Coupon("25", "5", testCode, DateUtils.currentDatePlus(0), DateUtils.currentDatePlus(5));
 
     public void createNewCoupon(){
         SeleniumUtils.click(adminCouponPage.addNewCoupon_Btn);
