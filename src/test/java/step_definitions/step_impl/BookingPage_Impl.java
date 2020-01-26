@@ -24,8 +24,7 @@ public class BookingPage_Impl {
 
     public void clickButton(String buttonName){
         switch (buttonName.toLowerCase()){
-            case "Book Now":
-                SeleniumUtils.moveIntoView(bookingPage.bookNow_Btn);
+            case "book now":
                 SeleniumUtils.click(bookingPage.bookNow_Btn);
                 break;
             case "cookies": SeleniumUtils.click(bookingPage.cookies_Btn);
