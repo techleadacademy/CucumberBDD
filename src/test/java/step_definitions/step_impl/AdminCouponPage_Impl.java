@@ -63,6 +63,27 @@ public class AdminCouponPage_Impl {
         return exists;
     }
 
+    public boolean verifyIfCouponDoesntExist(){
+        boolean exists = false;
+        List<WebElement> ls = getAllExistingCouponCodes();
+        try {
+            ls = getAllExistingCouponCodes();
+            for (WebElement element : ls) {
+                if (element.getText().equalsIgnoreCase(currentCoupon.getCouponCode()))
+                    exists = true;
+            }
+        }catch (StaleElementReferenceException e){
+            ls = getAllExistingCouponCodes();
+            for (WebElement element : ls) {
+                if (element.getText().equalsIgnoreCase(currentCoupon.getCouponCode()))
+                    exists = true;
+            }
+        }catch (Exception e){
+
+        }
+        return exists;
+    }
+
     public void deleteLastCreatedCoupon(){
         SeleniumUtils.click(adminCouponPage.removeCoupon_Btn);
         Alert alert = driver.switchTo().alert();

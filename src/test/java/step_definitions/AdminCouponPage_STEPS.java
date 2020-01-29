@@ -1,5 +1,6 @@
 package step_definitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -14,11 +15,13 @@ import util.Driver;
 import util.SeleniumUtils;
 
 import java.util.List;
+import java.util.Map;
 
 public class AdminCouponPage_STEPS {
     private static WebDriver driver = Driver.getDriver();
     AdminHomePage adminHomePage = new AdminHomePage();
     AdminCouponPage_Impl adminCouponPage_Impl = new AdminCouponPage_Impl();
+    AdminCouponPage adminCouponPage = new AdminCouponPage();
 
 
 
@@ -26,6 +29,30 @@ public class AdminCouponPage_STEPS {
     public void creates_a_new_coupon() {
         adminCouponPage_Impl.createNewCoupon();
     }
+
+    @When("Creates a new coupon with following info")
+    public void creates_a_new_coupon_with_following_info(DataTable dataTable) {
+        List<Map<String, String>> list = dataTable.asMaps();
+
+        SeleniumUtils.click(adminCouponPage.addNewCoupon_Btn);
+        SeleniumUtils.sendKeys(adminCouponPage.percentage_field, list.get(0).get("value"));
+        SeleniumUtils.sendKeys(adminCouponPage.maxUses_field, list.get(1).get("value"));
+        SeleniumUtils.sendKeys(adminCouponPage.startDate_field, list.get(2).get("value"));
+        SeleniumUtils.sendKeys(adminCouponPage.endDate_field, list.get(3).get("value"));
+
+//        if (list.get(4).get("value").equalsIgnoreCase("check"))
+//        SeleniumUtils.click(adminCouponPage.tours_checkBox);
+
+        if (list.get(4).get("value").equalsIgnoreCase("check"))
+        SeleniumUtils.click(adminCouponPage.cars_checkBox);
+
+        SeleniumUtils.sendKeys(adminCouponPage.codeInput_field, list.get(5).get("value"));
+        SeleniumUtils.click(adminCouponPage.submit_Btn);
+        SeleniumUtils.waitForVisibilityOfElement(adminCouponPage.addNewCoupon_Btn);
+
+    }
+
+
 
     @Then("Verifies coupon is {string}")
     public void verifies_coupon_is(String status) {
@@ -37,7 +64,7 @@ public class AdminCouponPage_STEPS {
             case "deleted":
                 SeleniumUtils.waitForPageToLoad();
                 CucumberUtils.logInfo("Coupon deleted",true);
-                Assert.assertFalse(adminCouponPage_Impl.verifyIfCouponExists());
+                Assert.assertFalse(adminCouponPage_Impl.verifyIfCouponDoesntExist());
         }
 
     }
