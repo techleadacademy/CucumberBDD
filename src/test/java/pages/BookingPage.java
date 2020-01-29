@@ -27,4 +27,5 @@ public class BookingPage {
     @FindBy(xpath = "//button[@aria-label='dismiss cookie message']")
     public WebElement cookies_Btn;
 
+
 }

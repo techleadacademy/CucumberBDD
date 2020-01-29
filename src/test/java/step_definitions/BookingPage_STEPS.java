@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import pages.BookingPage;
 import step_definitions.step_impl.AdminCouponPage_Impl;
 import step_definitions.step_impl.BookingPage_Impl;
+import util.CucumberUtils;
 import util.Driver;
 import util.SeleniumUtils;
 
@@ -29,6 +30,7 @@ public class BookingPage_STEPS {
     @Then("Verifies positive message is displayed")
     public void verifies_positive_message_is_displayed() {
         Assert.assertEquals(bookingPageImpl.expectedCouponMessage, bookingPageImpl.getCouponCodeConfirmationText());
+        CucumberUtils.logInfo("Verify coupon code worked", true);
     }
 
 

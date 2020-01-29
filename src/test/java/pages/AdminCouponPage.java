@@ -54,7 +54,8 @@ public class AdminCouponPage {
 
     public String allCouponsCodes_XPATH = "(//tr[contains(@class,'xcrud-row xcrud-row')])/td[4]";
 
-
+    @FindBy(xpath = "//a[@title='Remove']")
+    public WebElement removeCoupon_Btn;
 
 //
 //    public WebElement getCouponElement(String name){
