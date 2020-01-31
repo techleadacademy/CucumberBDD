@@ -8,14 +8,14 @@ import org.openqa.selenium.WebDriver;
 import step_definitions.Hooks;
 
 public class CucumberUtils {
-    private static WebDriver driver = Driver.getDriver();
+    //private static WebDriver driver = Driver.getDriver();
 
     public static void logInfo(String msg, boolean takeScreenshot){
         Scenario scenario = Hooks.currentScenario;
         scenario.write(DateUtils.currentDateTime() + " INFO: " + msg);
 
         if (takeScreenshot)
-            scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
+            scenario.embed(((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
 

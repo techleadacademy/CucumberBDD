@@ -22,7 +22,7 @@ public class SeleniumUtils{
     }
 
     public static void waitForClickability(WebElement element){
-        WebDriverWait explicitWait = new WebDriverWait(driver, SeleniumConstants.EXPLICIT_WAIT_TIME);
+        WebDriverWait explicitWait = new WebDriverWait(Driver.getDriver(), SeleniumConstants.EXPLICIT_WAIT_TIME);
         explicitWait.until(ExpectedConditions.visibilityOf(element));
     }
     public static void waitForVisibilityOfAll(List<WebElement> list){

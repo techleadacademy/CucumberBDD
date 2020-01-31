@@ -25,6 +25,7 @@ public class BookingPage_STEPS {
     @When("Applies existing coupon code")
     public void applies_existing_coupon_code() {
         bookingPageImpl.applyCoupon(AdminCouponPage_Impl.currentCoupon);
+        CucumberUtils.logInfo("Applied coupon code", true);
     }
 
     @Then("Verifies positive message is displayed")

@@ -2,7 +2,9 @@ package step_definitions;
 
 import cucumber.api.Scenario;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import util.CucumberUtils;
 import util.Driver;
 
 public class Hooks{
@@ -16,6 +18,11 @@ public class Hooks{
 
     @After
     public void afterScenario(){
-        //Driver.quitDriver();
+        Driver.quitDriver();
+    }
+
+    @AfterStep
+    public void afterStepActions(){
+        //CucumberUtils.logInfo("", true);
     }
 }
