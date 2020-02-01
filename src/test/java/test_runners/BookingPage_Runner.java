@@ -12,8 +12,9 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/cucumber-reports/BookingPage-report",
                 "json:target/cucumber-reports/cucumberTestReports.json",
+                "rerun:target/rerun.txt"
         },
-        tags = {"@admin"},
+        tags = {"@ff"},
         dryRun = false
 )
 public class BookingPage_Runner {

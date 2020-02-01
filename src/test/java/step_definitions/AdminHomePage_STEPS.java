@@ -17,7 +17,7 @@ public class AdminHomePage_STEPS {
 
     @Given("User opens Admin home page")
     public void user_opens_Admin_home_page() {
-        driver.get(ConfigReader.readProperty("urlAdmin"));
+        Driver.getDriver().get(ConfigReader.readProperty("urlAdmin"));
     }
 
     @When("User logsin with admin account")
