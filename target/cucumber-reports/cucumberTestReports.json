@@ -3,12 +3,13 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-02-22T16:16:02.499Z",
+        "start_timestamp": "2020-02-22T18:22:10.822Z",
         "before": [
           {
             "result": {
-              "duration": 46770608629,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: Unable to parse remote response: Misconfigured -- Unsupported OS/browser/version/device combo: OS: \u0027MacOS Catalina\u0027, Browser: \u0027googlechrome\u0027, Version: \u002778.\u0027, Device: \u0027unspecified\u0027\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\n\tat util.Driver.getRemoteDriver(Driver.java:79)\n\tat util.Driver.initialize(Driver.java:28)\n\tat util.Driver.getDriver(Driver.java:68)\n\tat step_definitions.Hooks.beforeScenario(Hooks.java:15)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: org.openqa.selenium.json.JsonException: Unable to determine type from: M. Last 1 characters read: M\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Techs-iMac.local\u0027, ip: \u0027192.168.0.128\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: Driver\n\tat org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)\n\tat org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)\n\tat org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)\n\tat org.openqa.selenium.json.Json.toType(Json.java:69)\n\tat org.openqa.selenium.json.Json.toType(Json.java:55)\n\tat org.openqa.selenium.json.Json.toType(Json.java:50)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)\n\t... 48 more\n",
+              "duration": 4504717364,
+              "status": "failed"
             },
             "match": {
               "location": "Hooks.beforeScenario(Scenario)"
@@ -22,7 +23,7 @@
         "after": [
           {
             "result": {
-              "duration": 940285374,
+              "duration": 196333,
               "status": "passed"
             },
             "match": {
@@ -35,8 +36,8 @@
         "steps": [
           {
             "result": {
-              "duration": 13655723004,
-              "status": "passed"
+              "duration": 1493160,
+              "status": "skipped"
             },
             "line": 5,
             "name": "User opens Admin home page",
@@ -46,8 +47,8 @@
             "after": [
               {
                 "result": {
-                  "duration": 343448,
-                  "status": "passed"
+                  "duration": 49391,
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "Hooks.afterStepActions()"
@@ -58,9 +59,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d80.0.3987.116)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Techs-iMac.local\u0027, ip: \u0027192.168.0.128\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/_7/mr993l29215...}, goog:chromeOptions: {debuggerAddress: localhost:56392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f5f76c295c42d1094e3a978af30eb779\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\n\tat util.SeleniumUtils.click(SeleniumUtils.java:47)\n\tat step_definitions.step_impl.AdminHomePage_Impl.login(AdminHomePage_Impl.java:16)\n\tat step_definitions.AdminHomePage_STEPS.user_logsin_with_admin_account(AdminHomePage_STEPS.java:25)\n\tat ✽.User logsin with admin account(file:src/test/resources/features/adminCouponPage.feature:6)\n",
-              "duration": 5281196407,
-              "status": "failed"
+              "duration": 1383375,
+              "status": "skipped"
             },
             "line": 6,
             "name": "User logsin with admin account",
@@ -70,8 +70,8 @@
             "after": [
               {
                 "result": {
-                  "duration": 89749,
-                  "status": "passed"
+                  "duration": 46819,
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "Hooks.afterStepActions()"
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 2076449,
+              "duration": 965716,
               "status": "skipped"
             },
             "line": 7,
@@ -93,7 +93,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 25588,
+                  "duration": 43321,
                   "status": "skipped"
                 },
                 "match": {
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 580532,
+              "duration": 793846,
               "status": "skipped"
             },
             "line": 8,
@@ -116,7 +116,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 24603,
+                  "duration": 43692,
                   "status": "skipped"
                 },
                 "match": {
@@ -128,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 729746,
+              "duration": 1009336,
               "status": "skipped"
             },
             "line": 9,
@@ -145,7 +145,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 23519,
+                  "duration": 3308204,
                   "status": "skipped"
                 },
                 "match": {

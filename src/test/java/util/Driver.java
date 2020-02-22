@@ -26,7 +26,6 @@ public class Driver {
             return;
         if (ConfigReader.readProperty("runInSaucelabs").equalsIgnoreCase("true")){
             driver = getRemoteDriver();
-            return;
         }else {
             switch (browser) {
                 case "chrome":
