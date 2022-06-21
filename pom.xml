@@ -88,7 +88,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <version>8.0.28</version>
         </dependency>
 
 <!--        DATABASE JDBC 6 Dependency no longer supported Solution Upload jar to library-->
